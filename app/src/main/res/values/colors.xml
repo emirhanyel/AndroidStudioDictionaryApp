@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="light_gray">#303030</color>
+    <color name="v2_light_gray">#AAAAAA</color>
+    <color name="v2_black">#303030</color>
+    <color name="blue">#3F5CFF</color>
+    <color name="v3_light_gray">#686868</color>
+    <color name="den">#E0E0E0</color>
+    <color name="den2">#F8F8F8</color>
+    <color name="transparent">#00000000</color>
+    <color name="def_black">#303030</color>
+
+    <color name="dark_green">#1a3b33</color>
+    <color name="dark_blue">#1f0954</color>
+
+</resources>

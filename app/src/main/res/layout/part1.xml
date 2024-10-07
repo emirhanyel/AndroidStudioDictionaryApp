@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="0dp"
+    android:background="#F8F8F8">
+
+
+    <TextView
+        android:id="@+id/WordText"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="17dp"
+        android:layout_weight="500"
+        android:lineHeight="39.84dp"
+
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/WordDifferentText"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:lineHeight="14.06dp"
+
+        android:textColor="@color/v2_black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/WordText"
+        app:layout_constraintTop_toBottomOf="@+id/WordText" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonSound"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/circle_voice"
+        app:backgroundTint="@color/white"
+        app:icon="@drawable/voice"
+        app:iconGravity="textStart"
+        app:iconPadding="0dp"
+        app:iconSize="30dp"
+        app:iconTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/WordText"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintTop_toTopOf="@+id/WordText" />
+
+    <LinearLayout
+        android:id="@+id/ButtonsLayout"
+        android:layout_width="391dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/WordDifferentText">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:visibility="gone"
+            android:id="@+id/CloseBtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/change_border_close"
+            android:drawableStart="@drawable/closeshape"
+            android:padding="13dp"
+
+
+            >
+            <!-- app:icon="@drawable/closeshape"
+            app:iconGravity="textStart"
+            app:iconPadding="0dp"
+            app:iconTint="@color/black"-->
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:visibility="gone"
+            android:id="@+id/NounBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="20dp"
+            android:paddingHorizontal="20dp"
+            android:background="@drawable/background_three_buttons"
+            android:text="@string/noun"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textStyle="bold">
+    </androidx.appcompat.widget.AppCompatButton>
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:visibility="gone"
+            android:id="@+id/VerbBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="20dp"
+            android:paddingHorizontal="20dp"
+            android:background="@drawable/background_three_buttons"
+            android:text="Verb"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textStyle="bold">
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:visibility="gone"
+            android:id="@+id/AdjectiveBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="20dp"
+            android:paddingHorizontal="20dp"
+            android:background="@drawable/background_three_buttons"
+            android:text="Adjective"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textStyle="bold">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

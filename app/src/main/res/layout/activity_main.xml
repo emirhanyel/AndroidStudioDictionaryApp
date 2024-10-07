@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity"
+    android:fitsSystemWindows="true"
+    android:background="@color/white"
+    >
+
+    <EditText
+        android:id="@+id/SearchBar"
+        android:layout_width="335dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="54dp"
+        android:background="@null"
+
+        android:drawableStart="?android:attr/actionModeWebSearchDrawable"
+        android:drawablePadding="10dp"
+        android:hint="Search"
+
+        android:inputType="textNoSuggestions|textVisiblePassword"
+        android:importantForAccessibility="no"
+        android:imeOptions="flagNoExtractUi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+
+        android:id="@+id/ButtonSearch"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+
+
+        android:background="@drawable/rect_search_button"
+
+        android:onClick="searchbtnclick"
+        android:text="Search"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/RecentSearchMainTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Recent search"
+        android:textColor="@color/v3_light_gray"
+        android:textFontWeight="500"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/SearchBar"
+        app:layout_constraintTop_toBottomOf="@+id/SearchBar" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerRecentSearch"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+
+        android:layout_marginEnd="27dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/RecentSearchMainTextView"
+        app:layout_constraintTop_toBottomOf="@+id/RecentSearchMainTextView"
+        tools:listitem="@layout/recent_search_item" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
